@@ -2,6 +2,8 @@
 
 A modern, interactive developer portfolio built with React, Tailwind CSS, and Framer Motion — featuring a 3D animated hero background, live GitHub project integration, and a custom AI assistant trained on my profile.
 
+🔗 **Live Demo:** [yashwanth-thammishetti.vercel.app](https://yashwanth-thammishetti.vercel.app)
+
 ## ✨ Features
 
 - **Animated Hero Section** — Typewriter role animation and a Three.js-powered neural network background (`@react-three/fiber`)
@@ -26,6 +28,9 @@ A modern, interactive developer portfolio built with React, Tailwind CSS, and Fr
 
 **Data**
 - Live GitHub REST API integration for project listings
+
+**Deployment**
+- Vercel (CI/CD via GitHub — every push to `main` auto-deploys)
 
 ## 📁 Project Structure
 
@@ -55,8 +60,8 @@ src/
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/Sunny123yash/yashwanth-portfolio.git
-cd yashwanth-portfolio
+git clone https://github.com/Sunny123yash/my-portfolio.git
+cd my-portfolio
 npm install
 npm run dev
 ```
@@ -68,6 +73,21 @@ The app will be running at `http://localhost:5173` (or the port shown in your te
 ```bash
 npm run build
 ```
+
+## ☁️ Deployment
+
+This project is deployed on **[Vercel](https://vercel.com)**, connected directly to this GitHub repository.
+
+- **Live URL:** [yashwanth-thammishetti.vercel.app](https://yashwanth-thammishetti.vercel.app)
+- **Framework Preset:** Vite (auto-detected)
+- **Continuous Deployment:** Every push to the `main` branch automatically triggers a new production deployment
+- **Environment Variables:** A `GROQ_API_KEY` is set in the Vercel project settings to power the "Power AI" mode of Yash AI (`/api/chat` endpoint). Without it, the chatbot automatically falls back to its offline knowledge base
+
+To deploy your own copy:
+1. Fork or clone this repo
+2. Import it into [Vercel](https://vercel.com/new) via GitHub
+3. Add your own `GROQ_API_KEY` (or equivalent) under **Environment Variables**
+4. Click **Deploy**
 
 ## 🤖 Yash AI
 
